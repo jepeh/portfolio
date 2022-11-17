@@ -1,0 +1,201 @@
+* {
+ top: 0;
+ left: 0;
+ box-sizing: border-box;
+ font: "Quicksand";
+ color: white;
+ user-select: none;
+ 
+ z-index: 2
+}
+body {
+ background-color: #000110;
+ padding-bottom: 10%
+}
+
+#textContainer {
+ position: relative;
+ margin: auto;
+ margin-top: 25vh;
+ transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+ animation: fade 2.4s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+#textContainer p {
+ text-align: center;
+ margin: auto
+}
+#hello {
+ font-size: 5em;
+ font-weight: 800
+}
+#name {
+ text-align: center;
+ font-size: 4vw;
+ font-weight: 400
+}
+#startButton {
+ position: relative;
+ text-align: center;
+ margin-top: 5%;
+}
+
+.bubbles {
+ position: fixed;
+ margin: auto;
+ background: linear-gradient(30deg, #0ABDFF, #B105FF);
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ display: none;
+ z-index: 1;
+ animation: pop 3s cubic-bezier(0.19, 1, 0.22, 1)
+}
+.b1 {
+ width: 30vw;
+ height: 30vw;
+ margin-left: -20vw;
+ margin-top: 10vh;
+ 
+}
+.b2 {
+  width: 10vw;
+ height: 10vw;
+ margin-left: 80vw;
+ margin-top: 35vh;
+ filter: blur(5px)
+}
+.b3 {
+  width: 9vw;
+ height: 9vw;
+ margin-left: 20vw;
+ margin-top: 90vh;
+ filter: blur(6px)
+}
+.skills {
+ margin: auto;
+ width: 60vw;
+ height: auto;
+ border-radius: 20px;
+ background-color: rgba(255,255,255,.05);
+ z-index: 2;
+ box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .3);
+ margin-top: 20vh;
+ text-align: center;
+ 
+ display: none
+}
+.skills p {
+ font-size: 3vw;
+ color: white;
+ font-weight: 500;
+ margin-top: 30%;
+}
+.skillsList {
+ display: grid;
+ position: relative;
+ width: 90%;
+ height: 50%;
+ background-color: none;
+ margin: auto;
+ margin-top: 10%;
+ grid-template-columns: 20% 20% 20% 20% 20%;
+ font-size: 2.8vw
+}
+.skillsAdd {
+ display: grid;
+ position: relative;
+ width: 90%;
+ height: 50%;
+ background-color: none;
+ margin: auto;
+ 
+ grid-template-columns: 25% 25% 25% 25%;
+ text-align: center;
+ align-items: center
+}
+.skillsAdd p {
+ font-size: 1.8vw;
+ text-align: center;
+ font-weight: 100
+}
+.info {
+ margin: auto;
+ width: 80vw;
+ height: auto;
+ background-color: rgba(255,255,255,.05);
+ border-radius: 20px;
+ margin-top: 20%;
+ text-align: center;
+ font-size: 1vw;
+ display: none
+}
+#infoP1 {
+ font-size: 1.4vw;
+ font-weight: 500
+}
+.projects {
+ margin: auto;
+ width: 80vw;
+ height: auto;
+ background-color: rgba(255,255,255,.05);
+ border-radius: 20px;
+ margin-top: 20%;
+ text-align: center;
+ font-size: 3vw;
+ z-index: 2;
+ display: none 
+}
+#projectP1 {
+ font-size: 2.8vw;
+ font-weight: 800
+}
+#project1{
+ display: grid;
+ width: 90%;
+ height: 70%;
+ background-color: none;
+ margin: auto;
+ grid-template-columns: 33.3% 33% 33%;
+ grid-template-rows: 50% 50%;
+ padding-bottom: 20px;
+ text-align: center
+}
+.imgs {
+ position: relative;
+ margin: 10px;
+ width: 90%;
+ border-radius: 15px;
+ transition: all .9s cubic-bezier(0.86, 0, 0.07, 1);
+ z-index: 1
+}
+.imgs:hover {
+ transform: scale(2);
+ z-index: 2;
+}
+#project1Name {
+ font-size: 3.5vw;
+ font-weight: 700
+}
+#project1Des {
+ width: 70%;
+ text-align: center;
+ margin: auto;
+ font-size: 2vw
+}
+@keyframes fade {
+ from {
+  opacity: 0
+ }
+ to {
+  opacity: 1
+ }
+}
+
+@keyframes pop {
+ from {
+  transform: scale(0)
+ }
+ to {
+  transform: scale(1)
+ }
+}
